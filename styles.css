@@ -21,7 +21,12 @@ body {
   font-family: "Inter", "Segoe UI", sans-serif;
   line-height: 1.6;
   color: var(--text);
-  background: linear-gradient(135deg, var(--bg-950), var(--bg-900) 45%, var(--bg-800));
+  background: linear-gradient(
+    135deg,
+    var(--bg-950),
+    var(--bg-900) 45%,
+    var(--bg-800)
+  );
 }
 
 h1,
@@ -284,7 +289,11 @@ button:hover {
 }
 
 .tool-card {
-  background: linear-gradient(180deg, rgba(17, 24, 39, 0.95), rgba(15, 23, 42, 0.86));
+  background: linear-gradient(
+    180deg,
+    rgba(17, 24, 39, 0.95),
+    rgba(15, 23, 42, 0.86)
+  );
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 22px 18px;
