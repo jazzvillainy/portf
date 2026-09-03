@@ -218,10 +218,10 @@ button:hover {
 }
 
 .experience-header {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
-  gap: 12px;
+  gap: 10px 16px;
   margin-bottom: 10px;
 }
 
@@ -236,16 +236,20 @@ button:hover {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   font-weight: 700;
+  justify-self: start;
 }
 
 .experience-header h2 {
   margin: 0;
-  font-size: 1.6rem;
+  font-size: clamp(1.15rem, 1.8vw, 1.6rem);
+  line-height: 1.35;
 }
 
 .duration {
   color: #a5b4fc;
   font-weight: 600;
+  white-space: nowrap;
+  justify-self: end;
 }
 
 .subheading {
@@ -460,6 +464,16 @@ footer {
   .media-grid,
   .tool-grid {
     grid-template-columns: 1fr;
+  }
+
+  .experience-header {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .duration {
+    justify-self: start;
+    white-space: normal;
   }
 
   .nav-wrap,
